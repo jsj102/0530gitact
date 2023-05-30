@@ -17,14 +17,13 @@ jobs:
       uses: actions/setup-java@v2
       with:
         java-version: 11
-        cache: maven
         distribution: 'adopt'
 
     - name: Build with Maven
-      run: mvn --file pom.xml
+      run: mvn clean install
 
     - name: Run tests
-      run: java JunitTest.java
+      run: mvn test
 						
 						
 						
