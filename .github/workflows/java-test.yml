@@ -24,3 +24,6 @@ jobs:
 
     - name: Run tests
       run: mvn --batch-mode test
+
+    - name: Run Static Code Analysis
+      run: mvn spotbugs:check
