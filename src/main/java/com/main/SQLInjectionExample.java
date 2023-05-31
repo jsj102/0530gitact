@@ -9,6 +9,10 @@ public class SQLInjectionExample {
 
     private static String getUserInput() {
         // 사용자로부터 입력 받는 로직
-        return "TEST"; //4
+<<<<<<< HEAD
+        return "TEST"; //3
+=======
+        return "TEST"; //3
+>>>>>>> feature/rebase-demo1
     }
 }
